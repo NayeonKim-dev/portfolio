@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/ico_favicon.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- js -->
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="layout-inner">
+                <h1 class="logo">YEAR 2023<span class="blind">포트폴리오</span></h1>
+                <ul class="header-list">
+                    <li class="header-item"><a href="#about">About</a></li>
+                    <li class="header-item skill"><a href="#skill">Skill</a></li>
+                    <li class="header-item"><a href="#work">Works</a></li>
+                    <li class="header-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="container">
+            <div class="intro-wrapper">
+                <div class="intro-content">
+                    <h2 class="blind">intro page</h2>
+                    <div class="percent-area">
+                        <div class="percent-inner">
+                            <div class="percent-box"></div>
+                            <div class="img-box">
+                                <img src="./assets/images/intro_percent.png" alt="인트로 퍼센트 이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="count-area">
+                        <img src="./assets/images/intro_count.gif" alt="인트로 카운트 이미지">
+                    </div>
+                </div>
+            </div>
+            <section class="sc-visual">
+                <div class="layout-inner">
+                    <div class="title-area">
+                        <h2 class="headline">
+                            <img src="./assets/images/vis_logo.svg" alt="web publisher portfolio">
+                        </h2>
+                    </div>
+                    <div class="text-area">
+                        <div class="img-box">
+                            <img src="./assets/images/vis_sign.gif" alt="사인 효과 이미지">
+                        </div>
+                        <p class="desc">
+                            사용자 편의성과 아름다운 디자인 구현을 위해<br>
+                            꾸준히 공부하는 웹 퍼블리셔 김나연입니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-about" id="about">
+                <h2 class="blind">About</h2>
+                <div class="img-box">
+                    <img src="./assets/images/about_img.webp" alt="소개 효과 이미지">
+                </div>
+                <div class="text-box">
+                    <p class="desc">
+                        저는 SEO와 웹 접근성을 고려하여 시멘틱 태그를 활용한 마크업으로 
+                        사용자 경험을 최우선으로 삼는 웹 퍼블리셔입니다. 
+                        시각적인 즐거움을 제공하는 동시에, 
+                        모든 사용자들이 콘텐츠에 원활하게 접근하고 이용할 수 있도록 노력합니다. 
+                        동료와 원활한 커뮤니케이션을 바탕으로 팀 프로젝트를 효율적으로 이끌어내며, 
+                        꾸준한 학습과 개발 업데이트를 통해 더 나은 웹 경험을 제공하기 위해 노력합니다. 
+                    </p>
+                </div>
+            </section>
+            <section class="sc-skill" id="skill">
+                <div class="layout-inner">
+                    <h2 class="headline">skill</h2>
+                    <div class="flex-inner">
+                        <div class="skill-content">
+                            <div class="skill-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/skill_html.png" alt="html 이미지">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="blind">html</h3>
+                                    <p>
+                                        시멘틱 태그를 활용하여 웹 표준과 웹 접근성을 준수해 코드를 작성하며
+                                        크로스 브라우징으로 호환성을 고려합니다.
+                                        또한 구조에 적합한 클래스명으로 웹 문서를 작성할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/skill_css.png" alt="css 이미지">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="blind">css</h3>
+                                    <p>
+                                        미디어 쿼리를 이용해 반응형 웹사이트를 구현할 수 있으며
+                                        그리드와 플렉스 박스 속성을 사용해
+                                        유연하고 정확한 페이지 레이아웃을 만들 수 있습니다.
+                                        또한 웹 폰트와 이미지 스프라이트를 사용해
+                                        용량을 최적화 해 사용자 경험을 개선할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/skill_jquery.png" alt="jquery 이미지">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="blind">jquery</h3>
+                                    <p>
+                                        jQuery를 활용하여 동적 웹 페이지를 구축할 수 있으며
+                                        json을 통한 비동기 데이터 로딩을 구현할 수 있습니다.
+                                        또한 추상화를 통해 보다 효율적으로 코드를 작성할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/skill_gsap.png" alt="gsap 이미지">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="blind">gsap</h3>
+                                    <p>
+                                        GSAP을 활용하여 웹사이트에 동적 애니메이션 효과를 구현할 수 있습니다.
+                                        타임라인, 스크롤 애니메이션, 콜백 함수 등을 적용하여
+                                        사용자에게 시각적으로 풍부하고 흥미로운 경험을 제공할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-area">
+                                <div class="img-box">
+                                    <img src="./assets/images/skill_swiper.png" alt="swiper 이미지">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="blind">swiper</h3>
+                                    <p>
+                                        Swiper 라이브러리의 다양한 옵션을 활용하여 
+                                        웹 페이지의 시각적인 효과를 극대화하고
+                                        인터랙티브한 슬라이드를 구현할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-work" id="work">
+                <div class="layout-inner">
+                    <h2 class="headline">Works</h2>
+                    <div class="work-content">
+                        <div class="work-area">
+                            <div class="text-box">
+                                    <div class="desc-group">
+                                        <h3 class="title">우리은행</h3>
+                                        <p class="desc">
+                                            시멘틱 마크업과 ir기법, swipe를 사용해 만든<br>
+                                            우리은행 클론코딩 사이트입니다.
+                                        </p>
+                                    </div>
+                                    <div class="link-group">
+                                        <a href="https://nayeonkim-dev.github.io/wooribank/" class="more-link" target="_blank">site</a>
+                                        <a href="https://velog.io/@nykim_dev/우리은행" class="more-link" target="_blank">code review</a>
+                                    </div>
+                                    <div class="hash-group">
+                                        <span>semantic</span>
+                                        <span>ir</span>
+                                        <span>swipe</span>
+                                        <span>flex</span>
+                                    </div>
+                            </div>
+                            <div class="img-box"><img src="./assets/images/works_wori.png" alt="우리은행 썸네일 이미지"></div>
+                        </div>
+                        <div class="work-area">
+                            <div class="text-box">
+                                <div class="desc-group">
+                                    <h3 class="title">espoir</h3>
+                                    <p class="desc">
+                                        다양한 swipe와 iframe을 사용해 만든<br>
+                                        에스쁘아 클론코딩 사이트입니다.
+                                    </p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="https://nayeonkim-dev.github.io/espoir/" class="more-link" target="_blank">site</a>
+                                    <a href="https://velog.io/@nykim_dev/에스쁘아" class="more-link" target="_blank">code review</a>
+                                </div>
+                                <div class="hash-group">
+                                    <span>semantic</span>
+                                    <span>ir</span>
+                                    <span>swipe</span>
+                                    <span>iframe</span>
+                                    <span>flex</span>
+                                </div>
+                            </div>
+                            <div class="img-box"><img src="./assets/images/works_espoir.png" alt="에스쁘아 썸네일 이미지"></div>
+                        </div>
+                        <div class="work-area">
+                            <div class="text-box">
+                                <div class="desc-group">
+                                    <h3 class="title">신라인터넷면세점</h3>
+                                    <p class="desc">
+                                        json 비동기 통신을 사용해 만든<br>
+                                        신라인터넷면세점 클론코딩 모바일 사이트입니다.
+                                    </p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="https://nayeonkim-dev.github.io/silla-duty/" class="more-link" target="_blank">site</a>
+                                    <a href="https://velog.io/@nykim_dev/신라온라인면세점" class="more-link" target="_blank">code review</a>
+                                </div>
+                                <div class="hash-group">
+                                    <span>semantic</span>
+                                    <span>ir</span>
+                                    <span>swipe</span>
+                                    <span>json</span>
+                                    <span>flex</span>
+                                </div>
+                            </div>
+                            <div class="img-box"><img src="./assets/images/works_silla.png" alt="신라면세점 썸네일 이미지"></div>
+                        </div>
+                        <div class="work-area">
+                            <div class="text-box">
+                                <div class="desc-group">
+                                    <h3 class="title">romeo</h3>
+                                    <p class="desc">
+                                        gsap과 swipe를 사용해 만든<br>
+                                        romeo 클론코딩 반응형 사이트입니다.
+                                    </p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="https://nayeonkim-dev.github.io/romeo/" class="more-link" target="_blank">site</a>
+                                    <a href="https://velog.io/@nykim_dev/romeo" class="more-link" target="_blank">code review</a>
+                                </div>
+                                <div class="hash-group">
+                                    <span>semantic</span>
+                                    <span>ir</span>
+                                    <span>swipe</span>
+                                    <span>gsap</span>
+                                    <span>flex</span>
+                                </div>
+                            </div>
+                            <div class="img-box"><img src="./assets/images/works_romeo.png" alt="romeo 썸네일 이미지"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="top-box">
+                <button class="top-btn">
+                    <span class="desc">top</span>
+                    <span class="img-box"><img src="./assets/images/fix_button.png" alt="top 버튼 이미지"></span>
+                </button>
+            </div>
+        </main>
+        <footer class="footer" id="contact">
+            <div class="layout-inner">
+                <h2 class="headline">Contact</h2>
+                <a href="mailto:nayeon.dev@gmail.com" class="mail">nayeon.dev@gmail.com</a>
+                <div class="link-area">
+                    <a href="https://github.com/NayeonKim-dev" class="more-link">GitHub</a>
+                    <a href="https://velog.io/@nykim_dev" class="more-link">Velog</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

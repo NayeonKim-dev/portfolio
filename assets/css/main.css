@@ -1,0 +1,360 @@
+/* intro-content --------------------------------------------- */
+.intro-wrapper {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.intro-wrapper .intro-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-wrapper .intro-content .percent-area {
+    flex: 1;
+}
+
+.intro-content .percent-area .percent-inner {
+    position: relative;
+    width: 262px;
+    height: 24048px;
+    margin-left: 125px;
+    padding-top: 226px;
+}
+
+.intro-content .percent-inner .percent-box {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 100px;
+    z-index: 5;
+}
+
+.intro-content .percent-inner .percent-box::before {
+    content: '';
+    position: absolute;
+    top: -125px;
+    width: 100%;
+    height: 125px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.intro-content .percent-inner .percent-box::after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: calc(100vh - 125px);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.intro-content .percent-inner .img-box {
+    width: 100%;
+}
+
+.intro-content .percent-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-content .count-area {
+    flex: 1;
+}
+
+.intro-content .count-area img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* sc-visual ----------------------------------------------- */
+.sc-visual {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #000;
+    padding-top: 100px;
+}
+
+.sc-visual .layout-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.sc-visual .title-area {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.sc-visual .title-area .headline {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.sc-visual .title-area .headline img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sc-visual .title-area .headline span {
+    display: block;
+    font-size: 75px;
+    letter-spacing: 40px;
+}
+
+.sc-visual .text-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    color: #fff;
+}
+
+.sc-visual .text-area .img-box {
+    width: 250px;
+    height: 200px;
+}
+
+.sc-visual .img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sc-visual .text-area .desc {
+    margin-left: -95px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* sc-about ----------------------------------------------- */
+.sc-about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#78fa3b, #8fed64, #aedc98);
+}
+.sc-about .img-box {
+    position: absolute;
+    top: 120px;
+    left: -30px;
+    width: 680px;
+    height: 270px;
+}
+.sc-about .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-about .text-box {
+    width: 600px;
+}
+.sc-about .text-box .desc {
+    position: relative;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000;
+    z-index: 10;
+}
+
+/* sc-skill ----------------------------------------------*/
+.sc-skill {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    padding-top: 110px;
+}
+
+.sc-skill .layout-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.sc-skill .layout-inner .flex-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sc-skill .layout-inner .skill-content {
+    display: flex;
+    gap: 100px;
+}
+
+.sc-skill .skill-content .skill-area {
+    text-align: center;
+}
+
+.sc-skill .skill-area .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.sc-skill .skill-area .img-box:hover {
+    transform: rotate(45deg);
+}
+
+.sc-skill .skill-area .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sc-skill .skill-area .text-box {
+    width: 200px;
+    color: #fff;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+
+/* sc-work ----------------------------------------------*/
+.sc-work {
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    background: #000;
+    text-transform: uppercase;
+}
+
+.sc-work .layout-inner .headline {
+    margin-bottom: 80px;
+}
+.sc-work .layout-inner .work-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.sc-work .work-content .work-area {
+    position: relative;
+    border-top: 1.5px solid rgba(255,255,255, 0.4);
+    color: #fff;
+    padding: 20px 0;
+}
+.sc-work .work-area .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sc-work .work-area .text-box:hover + .img-box {
+    opacity: 1;
+}
+
+.sc-work .desc-group .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sc-work .text-box .link-group {
+    display: flex;
+    gap: 20px;
+}
+.sc-work .link-group .more-link {
+    position: relative;
+    font-weight: bold;
+}
+
+.sc-work .link-group .more-link:hover {
+    color: rgba(119, 251, 57, 1);
+}
+
+.sc-work .link-group .more-link + .more-link::after {
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -11px;
+    color: #888;
+}
+
+.sc-work .hash-group span {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #888;
+    padding-left: 10px;
+}
+
+.sc-work .hash-group span::before {
+    content: '#';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sc-work .work-area .img-box {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.sc-work .work-area .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* top btn -----------------------------------------------*/
+.container .top-box {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.container .top-box .top-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.container .top-box .top-btn .desc {
+    color: rgba(119, 251, 57, 1);
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    transition: 0.5s;
+}
+
+.container .top-box .top-btn .img-box {
+    display: block;
+    width: 132px;
+    height: 110px;
+    margin-top: 10px;
+}
+
+.container .top-box .top-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

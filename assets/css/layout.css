@@ -1,0 +1,92 @@
+@import './reset.css';
+@import './common.css';
+@import './fonts.css';
+
+/* header -------------------------------------------------- */
+.header {
+    height: 90px;
+    background: #000;
+    color: rgba(119, 251, 57, 1);
+    text-transform: uppercase;
+}
+
+.header .layout-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.header .logo {
+    flex: 2;
+    color: #fff;
+}
+
+.header .header-list {
+    display: flex;
+    flex: 8;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header .header-list .header-item:hover {
+    color: #fff;
+}
+
+/* footer -------------------------------------------------- */
+.footer {
+    width: 100%;
+    padding: 50px 0 110px;
+    background: rgba(119, 251, 57, 1);
+}
+
+.footer .headline {
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.footer .mail {
+    position: relative;
+    letter-spacing: 1.6px;
+    font-feature-settings: "smcp";
+    font-variation-settings: 'wght' 612;
+    font-size: 120px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.footer .mail:hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #000;
+}
+
+.footer .link-area {
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+.footer .link-area .more-link {
+    position: relative;
+    margin-right: 25px;
+    letter-spacing: 1.6px;
+}
+
+.footer .link-area .more-link:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.footer .link-area .more-link:hover:after {
+    display: none;
+}
