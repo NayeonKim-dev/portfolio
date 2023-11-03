@@ -30,6 +30,62 @@ $(function(){
         }
     });
 
+    // sc-work modal ====================================
+    $('.sc-work .link-group .full').click(function(e){
+        e.preventDefault();
+        let workUrl = $(this).attr("href");
+        let siteEL = `
+            <div class="site-area">
+                <div class="site-content">
+                    <iframe src="${workUrl}" frameborder="0"></iframe>
+                </div>
+                <button class="site-btn"><span class="material-icons">close</span></button>
+            </div>
+        `
+        $('.sc-work').append(siteEL);
+    });
+
+    //moblie
+    $('.sc-work .link-group .moblie').click(function(e){
+        e.preventDefault();
+        let workUrl = $(this).attr("href");
+        let urlValue = workUrl.replace(/^https?:\/\//,'');
+        let siteEL = `
+            <div class="site-area moblie">
+                <div class="site-content">
+                    <div class="phone-graphic">
+                        <div class="phone-case">
+                            <div class="phone-container-outer">
+                                <div class="phone-container-inner">
+                                    <div class="phone-header">
+                                        <p class="phone-header-time">1:02</p>
+                                        <p class="phone-header-icons">
+                                            <span class="material-icons">signal_cellular_alt</span>
+                                            <span class="material-icons">wifi</span>
+                                            <span class="material-icons battery">battery_std</span>
+                                        </p>
+                                        <div class="phone-url-box">
+                                            <p class="url">${urlValue}</p>
+                                            <span class="material-icons share">ios_share</span>
+                                        </div>
+                                    </div>
+                                    <div class="iframe-box">
+                                        <iframe src="${workUrl}" frameborder="0"></iframe>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="site-btn"><span class="material-icons">close</span></button>
+            </div>
+        `
+        $('.sc-work').append(siteEL);
+    });
+
+    $(document).on('click', '.site-area .site-btn', function() {
+        $('.site-area').remove();
+    });
 
     // top btn ===============================================
     // scroll top animation
