@@ -290,6 +290,11 @@
     color: #888;
 }
 
+.sc-work .participate-group span {
+    font-size: 14px;
+    color: #888;
+}
+
 .sc-work .hash-group span {
     position: relative;
     text-transform: uppercase;
