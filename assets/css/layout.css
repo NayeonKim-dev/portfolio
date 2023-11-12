@@ -47,7 +47,8 @@
     margin-bottom: 80px;
 }
 
-.footer .mail {
+.footer .contact {
+    display: block;
     position: relative;
     letter-spacing: 1.6px;
     font-feature-settings: "smcp";
@@ -56,7 +57,12 @@
     color: rgba(0, 0, 0, 1);
 }
 
-.footer .mail:hover:after {
+.footer .contact.tel {
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.footer .contact:hover:after {
     content: '';
     position: absolute;
     bottom: 0;
